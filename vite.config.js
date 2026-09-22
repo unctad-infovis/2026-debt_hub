@@ -12,9 +12,13 @@ export default defineConfig(({ command }) => ({
     minify: 'terser',
     outDir: 'dist',
     rollupOptions: {
-      // index.html is a dev-only combined preview (stacks all 5 entries with stand-in
-      // Drupal placeholders, see README's "Local preview" section) — not a build entry,
-      // never deployed. Only the 5 real embeddable widgets get bundled for production.
+      // index.html (the combined demo page, see README's "Local preview" section) is
+      // deliberately NOT a Rollup entry here — if the same Index*.jsx scripts are entered
+      // from two HTML files, Vite/Rollup stops deduping and stable-naming them as one
+      // shared entry per script and instead mints a second, differently content-hashed copy
+      // of every entry (doubling ~700KB of JS) while breaking the stable `js/[name].min.js`
+      // filenames Drupal editors hardcode. Instead, scripts/postbuild.js assembles
+      // dist/index.html afterwards from the tags these 5 real entries already produce.
       input: {
         hero: './hero.html',
         'stats-strip': './stats-strip.html',
