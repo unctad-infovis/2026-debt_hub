@@ -1,0 +1,2 @@
+var t=()=>{const{hostname:t,href:o}=window.location;return o.includes("unctad.org")?"https://storage.unctad.org/2026-debt_hub/":"localhost"===t?"./":"https://unctad-infovis.github.io/2026-debt_hub/"},o=o=>o?.startsWith("http")?o:`${t()}${o}`;export{o as n,t};
+//# sourceMappingURL=2026-debt_hub.BasePath-CqKmYJzw.js.map
