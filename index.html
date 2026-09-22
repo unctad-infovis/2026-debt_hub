@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/assets/font/fonts.css" />
+    <title>2026-debt_hub</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .drupal_placeholder {
+        background: repeating-linear-gradient(45deg, #f4f4f4, #f4f4f4 10px, #eaeaea 10px, #eaeaea 20px);
+        border-bottom: 1px dashed #999;
+        border-top: 1px dashed #999;
+        box-sizing: border-box;
+        color: #555;
+        font: 13px/1.4 -apple-system, BlinkMacSystemFont, sans-serif;
+        padding: 24px 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      Full-page preview: combines all 5 embeddable entries (Hero, Stats strip, Featured
+      charts, Solutions, DMFAS highlight) with stand-in blocks where Drupal's own View
+      blocks are expected to sit on the real unctad.org page. Each entry is also embeddable
+      on its own — see hero.html, stats-strip.html, featured-charts.html, solutions.html,
+      dmfas-highlight.html and the README's "Embedding" section.
+
+      Placeholder order/placement below is a best guess pending the approved mock-up — treat
+      it as a starting point for the Drupal page build, not a final layout decision.
+    -->
+
+    <div class="app-root-2026-debt_hub" id="app-root-2026-debt_hub-hero">Loading...</div>
+    <script type="module" src="/src/jsx/Index.jsx"></script>
+
+    <div class="app-root-2026-debt_hub" id="app-root-2026-debt_hub-stats-strip">Loading...</div>
+    <script type="module" src="/src/jsx/IndexStatsStrip.jsx"></script>
+
+    <div class="drupal_placeholder publications_container">Drupal: "Latest debt & finance publications" block</div>
+
+    <div class="app-root-2026-debt_hub" id="app-root-2026-debt_hub-featured-charts">Loading...</div>
+    <script type="module" src="/src/jsx/IndexFeaturedCharts.jsx"></script>
+
+    <div class="app-root-2026-debt_hub" id="app-root-2026-debt_hub-solutions">Loading...</div>
+    <script type="module" src="/src/jsx/IndexSolutions.jsx"></script>
+
+    <div class="app-root-2026-debt_hub" id="app-root-2026-debt_hub-dmfas-highlight">Loading...</div>
+    <script type="module" src="/src/jsx/IndexDmfasHighlight.jsx"></script>
+
+    <div class="drupal_placeholder news_container">Drupal: "Latest debt & finance news" block</div>
+    <div class="drupal_placeholder">Drupal: Related meetings/events block</div>
+    <div class="drupal_placeholder">Drupal: Newsletter signup (out of scope)</div>
+  </body>
+</html>

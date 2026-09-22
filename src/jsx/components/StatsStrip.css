@@ -1,0 +1,16 @@
+.app-root-2026-debt_hub .app {
+  .stats_strip_grid {
+    box-sizing: border-box;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin: 0 auto;
+    max-width: 1350px;
+    padding: 30px 20px;
+  }
+  @media (max-width: 720px) {
+    .stats_strip_grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

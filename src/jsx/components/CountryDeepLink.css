@@ -1,0 +1,16 @@
+.app-root-2026-debt_hub .app {
+  .country_deep_link {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0 0;
+    .un_select {
+      max-width: 320px;
+      width: 100%;
+    }
+    .country_deep_link_cta {
+      border-radius: 100px;
+    }
+  }
+}

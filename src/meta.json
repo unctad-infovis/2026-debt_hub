@@ -1,0 +1,83 @@
+{
+  "show_site_header": false,
+  "hero": {
+    "title": "Debt Hub",
+    "description": "UN Trade and Development (UNCTAD)'s work on the global debt crisis in one place – data and analysis, support for borrower countries, and debt-management capacity building.",
+    "background_image_url": "assets/img/2026-debt_hub_hero.jpg?v=1",
+    "cta": { "label": "See the numbers", "target_selector": "#stats-strip" },
+    "show_cta": false,
+    "show_nav_cards": false,
+    "nav_cards": [{ "label": "World of Debt", "image_url": "assets/img/2026-debt_hub_nav_world_of_debt.jpg?v=1", "target_selector": ".featured-charts" }, { "label": "DMFAS", "image_url": "assets/img/2026-debt_hub_nav_dmfas.jpg?v=1", "target_selector": ".dmfas-highlight" }],
+    "pills": [{ "label": "The numbers", "target_selector": "#stats-strip" }, { "label": "World of Debt", "target_selector": ".featured-charts" }, { "label": "Our solutions", "target_selector": ".solutions" }, { "label": "DMFAS", "target_selector": ".dmfas-highlight" }]
+  },
+  "stats_strip": {
+    "csv_url": "",
+    "stats": [
+      { "match": { "column": "", "value": "" }, "value_column": "", "value": 31, "label": "Developing countries' public debt, 2024", "prefix": "$", "suffix": " trillion", "decimals": 0 },
+      { "match": { "column": "", "value": "" }, "value_column": "", "value": 921, "label": "Net interest payments, 2024", "prefix": "$", "suffix": " billion", "decimals": 0 },
+      { "match": { "column": "", "value": "" }, "value_column": "", "value": 61, "label": "Developing countries spending over 10% of government revenue on net interest", "prefix": "", "suffix": "", "decimals": 0 },
+      { "match": { "column": "", "value": "" }, "value_column": "", "value": 3.4, "label": "People living in countries where interest payments exceed health or education spending", "prefix": "", "suffix": " billion", "decimals": 1 }
+    ]
+  },
+  "featured_charts": {
+    "title": "World of Debt",
+    "description": "UNCTAD's flagship data and analysis on the global debt crisis, updated regularly.",
+    "tabs": [{ "label": "Public debt by region", "chart_id": "" }, { "label": "Interest payment burden", "chart_id": "" }, { "label": "Net resource transfer", "chart_id": "" }],
+    "dashboard_url": "https://unctad.org/publication/world-of-debt/dashboard",
+    "dashboard_cta_label": "Open the full interactive dashboard",
+    "country_deep_link": {
+      "enabled": false,
+      "param_name": "country",
+      "label": "Explore a country in the full dashboard",
+      "countries": []
+    }
+  },
+  "solutions": {
+    "title": "UNCTAD's work on debt",
+    "description": "Three ways UNCTAD helps countries understand, negotiate and manage their debt.",
+    "items": [
+      {
+        "id": "world_of_debt",
+        "title": "World of Debt",
+        "description": "Data and analysis tracking the scale of the global debt crisis.",
+        "image_url": "assets/img/2026-debt_hub_solutions_world_of_debt.jpg?v=1",
+        "stat_label": "Developing countries' public debt",
+        "stat_value": "$31 trillion",
+        "cta_label": "Explore World of Debt",
+        "url": "https://unctad.org/publication/world-of-debt"
+      },
+      {
+        "id": "borrowers_platform",
+        "title": "Borrowers' Platform",
+        "description": "A forum for developing-country borrowers to exchange experience and coordinate on debt issues.",
+        "image_url": "assets/img/2026-debt_hub_solutions_borrowers_platform.jpg?v=1",
+        "stat_label": "Developing countries' external debt",
+        "stat_value": "$11.7 trillion",
+        "cta_label": "Visit the Borrowers' Platform",
+        "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform"
+      },
+      {
+        "id": "dmfas",
+        "title": "DMFAS",
+        "description": "Debt-management software, capacity building and advisory services, for over 40 years.",
+        "image_url": "assets/img/2026-debt_hub_solutions_dmfas.jpg?v=1",
+        "stat_label": "Institutions using DMFAS",
+        "stat_value": "85 institutions in 60 countries",
+        "cta_label": "Discover DMFAS",
+        "url": "https://unctad.org/topic/debt-and-finance/dmfas"
+      }
+    ]
+  },
+  "dmfas_highlight": {
+    "title": "DMFAS: 40+ years of debt-management support",
+    "description": "UNCTAD's technical cooperation programme and debt-management software, used by institutions worldwide.",
+    "stats": [
+      { "value": 85, "label": "Institutions currently using DMFAS", "prefix": "", "suffix": "", "decimals": 0 },
+      { "value": 60, "label": "Countries", "prefix": "", "suffix": "", "decimals": 0 },
+      { "value": 40, "label": "Years of experience", "prefix": "", "suffix": "+", "decimals": 0 },
+      { "value": 115, "label": "Institutions served historically", "prefix": "", "suffix": "+", "decimals": 0 }
+    ],
+    "visual": { "type": "map", "countries_csv_url": "" },
+    "cta": { "label": "Visit DMFAS", "url": "https://unctad.org/topic/debt-and-finance/dmfas" }
+  }
+}

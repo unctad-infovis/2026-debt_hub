@@ -1,0 +1,8 @@
+/* ButtonAnchor (general-tools) styles its background via var(--main-color)/--secondary-color,
+   which it never defines itself — the consuming app must. Centralized here instead of an
+   inline style per entry (App.jsx used to set this only for the hero) since every entry that
+   renders a ButtonAnchor CTA (Solutions, FeaturedCharts, DmfasHighlight) needs it, not just hero. */
+.app-root-2026-debt_hub .app {
+  --main-color: var(--un-color-blue);
+  --secondary-color: var(--un-color-blue-darkest);
+}

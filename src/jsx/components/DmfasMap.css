@@ -1,0 +1,13 @@
+.app-root-2026-debt_hub .app {
+  .dmfas_map_wrapper {
+    box-sizing: border-box;
+    margin: 20px 0 0;
+    width: 100%;
+    .dmfas_map_warning {
+      margin-bottom: 12px;
+    }
+    .dmfas_map {
+      width: 100%;
+    }
+  }
+}

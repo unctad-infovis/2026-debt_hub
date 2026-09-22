@@ -1,0 +1,41 @@
+.app-root-2026-debt_hub .app {
+  .dmfas_highlight_section {
+    box-sizing: border-box;
+    padding: 40px 20px;
+    .dmfas_highlight_content {
+      margin: 0 auto;
+      max-width: 1350px;
+    }
+    .dmfas_highlight_heading {
+      margin-bottom: 24px;
+      max-width: 700px;
+    }
+    .dmfas_highlight_title {
+      color: #000;
+      font-size: var(--un-font-size-xxxl);
+      font-weight: var(--un-font-weight-bolder);
+      line-height: var(--un-line-height-small);
+      margin: 0;
+    }
+    .dmfas_highlight_description {
+      color: var(--un-color-grey-text);
+      font-size: var(--un-font-size-normal);
+      line-height: var(--un-line-height-normal);
+      margin: 8px 0 0;
+    }
+    .dmfas_highlight_stats {
+      display: grid;
+      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    @media (max-width: 720px) {
+      .dmfas_highlight_stats {
+        grid-template-columns: 1fr;
+      }
+    }
+    .dmfas_highlight_cta {
+      border-radius: 100px;
+      margin-top: 24px;
+    }
+  }
+}
