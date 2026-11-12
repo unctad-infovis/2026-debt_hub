@@ -3,7 +3,7 @@
   "hero": {
     "title": "Debt Hub",
     "description": "All of UNCTAD's work on debt, in one place",
-    "background_image_url": "assets/img/2026-debt_hub_hero.jpg?v=1",
+    "background_image_url": "assets/img/2026-debt_hub_hero.jpg?v=2",
     "cta": { "label": "Our solutions", "target_selector": ".solutions" },
     "show_cta": false,
     "show_nav_cards": false,

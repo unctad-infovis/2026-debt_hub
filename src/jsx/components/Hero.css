@@ -48,6 +48,7 @@
       line-height: var(--un-line-height-normal);
       margin: 0;
       max-width: 560px;
+      padding: 0;
     }
     .hero_cta {
       border-radius: 100px;
