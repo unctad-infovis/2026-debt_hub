@@ -3,8 +3,7 @@ import useCountUp from '@unctad-infovis/general-tools/helpers/UseCountUp.js';
 import formatNumber from '../helpers/FormatNumber.js';
 import './StatTile.css';
 
-// Shared count-up figure tile, used by both StatsStrip (global headline figures) and
-// DmfasHighlight (DMFAS programme figures) — extracted once a second consumer appeared.
+// Shared count-up figure tile, used by DmfasHighlight (DMFAS programme figures).
 const StatTile = ({ delay, label, prefix, suffix, decimals, numeric, url }) => {
   const [current, ref] = useCountUp(numeric ?? 0, { decimals });
   const content =

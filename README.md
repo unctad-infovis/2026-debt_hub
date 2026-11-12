@@ -39,9 +39,9 @@ These packages are published from the [`un-init-project`](https://github.com/unc
 Debt Hub is UNCTAD's landing page bringing together its debt-related work — World of Debt (data & analysis), the Borrowers' Platform, and DMFAS (technical cooperation & debt-management software) — in one visual, data-driven place. It is **not** a single-page app: it is 5 independently embeddable Vite entries, each mounting its own React root, meant to be dropped onto a Drupal page as separate blocks alongside native Drupal content (publications, news):
 
 * `hero.html` / `Hero.jsx` — title, strapline, full-bleed image, pill nav
-* `stats-strip.html` / `StatsStrip.jsx` — headline "scale of the problem" figures
 * `featured-charts.html` / `FeaturedCharts.jsx` — a small number of recurring World of Debt charts (Datawrapper embeds) + a link to the full interactive dashboard
-* `solutions.html` / `Solutions.jsx` — the page's core router: 3 product cards linking to World of Debt, the Borrowers' Platform and DMFAS
+* `solutions.html` / `Solutions.jsx` — the page's core router: a highlighted headline figure (3.4 billion people) plus 3 product cards linking to World of Debt, the Borrowers' Platform and DMFAS
+* `borrowers-platform.html` / `BorrowersPlatform.jsx` — Borrowers' Platform block (mockup with placeholder copy from `meta.json`'s `borrowers_platform`)
 * `dmfas-highlight.html` / `DmfasHighlight.jsx` — DMFAS stat tiles + a country-usage map + a link out
 
 Root `index.html` is a **combined demo page** (built and deployed — it's the "Live demo" link above) stacking all 5 entries with dashed placeholder blocks standing in for native Drupal content, so the assembled page can be reviewed without a Drupal instance. It is a demo only: each entry also runs standalone at its own `.html` file, and that's how the real unctad.org page embeds them, never this combined file. See the implementation plan for the full architecture and open questions (Datawrapper chart IDs, DMFAS country dataset, dashboard country-deep-link support) still pending before launch.

@@ -1,7 +1,8 @@
 .app-root-2026-debt_hub .app {
   .dmfas_highlight_section {
+    background-color: var(--un-color-blue-lightest);
     box-sizing: border-box;
-    padding: 40px 20px;
+    padding: clamp(60px, 7vw, 100px) 20px;
     .dmfas_highlight_content {
       margin: 0 auto;
       max-width: 1350px;
@@ -27,6 +28,9 @@
       display: grid;
       gap: 22px;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      .stats_strip_tile {
+        background-color: #fff;
+      }
     }
     @media (max-width: 720px) {
       .dmfas_highlight_stats {

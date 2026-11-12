@@ -1,7 +1,8 @@
 .app-root-2026-debt_hub .app {
   .featured_charts {
+    background-color: var(--un-color-blue-lightest);
     box-sizing: border-box;
-    padding: 40px 20px;
+    padding: clamp(60px, 7vw, 100px) 20px;
     .featured_charts_content {
       margin: 0 auto;
       max-width: 1350px;

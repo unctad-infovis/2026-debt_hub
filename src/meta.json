@@ -1,28 +1,25 @@
 {
-  "show_site_header": false,
+  "show_site_header": true,
   "hero": {
     "title": "Debt Hub",
-    "description": "UN Trade and Development (UNCTAD)'s work on the global debt crisis in one place – data and analysis, support for borrower countries, and debt-management capacity building.",
+    "description": "All of UNCTAD's work on debt, in one place",
     "background_image_url": "assets/img/2026-debt_hub_hero.jpg?v=1",
-    "cta": { "label": "See the numbers", "target_selector": "#stats-strip" },
+    "cta": { "label": "Our solutions", "target_selector": ".solutions" },
     "show_cta": false,
     "show_nav_cards": false,
     "nav_cards": [{ "label": "World of Debt", "image_url": "assets/img/2026-debt_hub_nav_world_of_debt.jpg?v=1", "target_selector": ".featured-charts" }, { "label": "DMFAS", "image_url": "assets/img/2026-debt_hub_nav_dmfas.jpg?v=1", "target_selector": ".dmfas-highlight" }],
-    "pills": [{ "label": "The numbers", "target_selector": "#stats-strip" }, { "label": "World of Debt", "target_selector": ".featured-charts" }, { "label": "Our solutions", "target_selector": ".solutions" }, { "label": "DMFAS", "target_selector": ".dmfas-highlight" }]
-  },
-  "stats_strip": {
-    "csv_url": "",
-    "stats": [
-      { "match": { "column": "", "value": "" }, "value_column": "", "value": 31, "label": "Developing countries' public debt, 2024", "prefix": "$", "suffix": " trillion", "decimals": 0 },
-      { "match": { "column": "", "value": "" }, "value_column": "", "value": 921, "label": "Net interest payments, 2024", "prefix": "$", "suffix": " billion", "decimals": 0 },
-      { "match": { "column": "", "value": "" }, "value_column": "", "value": 61, "label": "Developing countries spending over 10% of government revenue on net interest", "prefix": "", "suffix": "", "decimals": 0 },
-      { "match": { "column": "", "value": "" }, "value_column": "", "value": 3.4, "label": "People living in countries where interest payments exceed health or education spending", "prefix": "", "suffix": " billion", "decimals": 1 }
+    "pills": [
+      { "label": "Our solutions", "target_selector": ".solutions" },
+      { "label": "World of Debt", "target_selector": ".featured-charts" },
+      { "label": "Borrowers' Platform", "target_selector": ".borrowers-platform" },
+      { "label": "DMFAS", "target_selector": ".dmfas-highlight" },
+      { "label": "Subscribe", "url": "https://unctad.org/subscribe" }
     ]
   },
   "featured_charts": {
     "title": "World of Debt",
     "description": "UNCTAD's flagship data and analysis on the global debt crisis, updated regularly.",
-    "tabs": [{ "label": "Public debt by region", "chart_id": "" }, { "label": "Interest payment burden", "chart_id": "" }, { "label": "Net resource transfer", "chart_id": "" }],
+    "tabs": [{ "label": "Public debt by region", "chart_id": "DAaJ2" }, { "label": "Interest payment burden", "chart_id": "0o2hz" }, { "label": "Net resource transfer", "chart_id": "6oEmg" }],
     "dashboard_url": "https://unctad.org/publication/world-of-debt/dashboard",
     "dashboard_cta_label": "Open the full interactive dashboard",
     "country_deep_link": {
@@ -33,8 +30,20 @@
     }
   },
   "solutions": {
+    "highlight": {
+      "value": 3.4,
+      "prefix": "",
+      "suffix": " billion",
+      "decimals": 1,
+      "label": "People living in countries where interest payments exceed health or education spending"
+    },
+    "quote": {
+      "text": "Placeholder quote on the global debt crisis and how countries can be supported to manage it.",
+      "name": "Rebeca Grynspan",
+      "title": "Secretary-General of UNCTAD"
+    },
     "title": "UNCTAD's work on debt",
-    "description": "Three ways UNCTAD helps countries understand, negotiate and manage their debt.",
+    "description": "UN Trade and Development (UNCTAD) helps countries understand, negotiate and manage their debt in three ways: through data and analysis, support for borrower countries, and debt-management capacity building.",
     "items": [
       {
         "id": "world_of_debt",
@@ -67,6 +76,16 @@
         "url": "https://unctad.org/topic/debt-and-finance/dmfas"
       }
     ]
+  },
+  "borrowers_platform": {
+    "title": "Borrowers' Platform",
+    "description": "A forum for developing-country borrowers to exchange experience, share data and coordinate on debt issues.",
+    "items": [
+      { "title": "Peer exchange", "description": "Debt officials share lessons from restructurings and negotiations." },
+      { "title": "Shared data", "description": "Common evidence on borrowing terms and creditor practices." },
+      { "title": "Collective voice", "description": "Coordinated positions on reform of the debt architecture." }
+    ],
+    "cta": { "label": "Visit the Borrowers' Platform", "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform" }
   },
   "dmfas_highlight": {
     "title": "DMFAS: 40+ years of debt-management support",

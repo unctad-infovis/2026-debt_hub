@@ -21,16 +21,16 @@ export default defineConfig(({ command }) => ({
       // dist/index.html afterwards from the tags these 5 real entries already produce.
       input: {
         hero: './hero.html',
-        'stats-strip': './stats-strip.html',
         'featured-charts': './featured-charts.html',
         solutions: './solutions.html',
+        'borrowers-platform': './borrowers-platform.html',
         'dmfas-highlight': './dmfas-highlight.html'
       },
       output: {
         // Entry files keep stable, predictable names (Drupal editors hardcode these in
         // embed snippets and manually bump a `?v=` query param to bust caches on deploy).
         // Shared chunks (e.g. the "styles" chunk holding react/general-tools/meta.json,
-        // deduplicated across all 5 entries) must instead get a content hash: each entry's
+        // deduplicated across all 6 entries) must instead get a content hash: each entry's
         // own `import` statement pointing at a shared chunk carries NO query string at all
         // (Rollup emits a bare relative path), so a manual `?v=` bump on the outer <script>
         // tag can never bust a shared chunk's cache — only a genuinely new URL can, which a

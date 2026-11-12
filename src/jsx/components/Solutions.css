@@ -1,14 +1,44 @@
 .app-root-2026-debt_hub .app {
   .solutions_section {
     box-sizing: border-box;
-    padding: 40px 20px;
+    padding: clamp(60px, 7vw, 100px) 20px;
     .solutions_content {
       margin: 0 auto;
       max-width: 1350px;
     }
+    .solutions_header {
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px 48px;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
     .solutions_heading {
-      margin-bottom: 24px;
+      flex: 1 1 360px;
       max-width: 700px;
+    }
+    .solutions_highlight {
+      background-color: var(--un-color-blue-darkest);
+      border-left: 10px solid var(--un-color-yellow-brand);
+      border-radius: 0 18px 18px 0;
+      box-sizing: border-box;
+      flex: 0 1 460px;
+      padding: 20px 28px;
+    }
+    .solutions_highlight_value {
+      color: var(--un-color-yellow-brand);
+      font-size: clamp(var(--un-font-size-xxxl), 6vw, var(--un-font-size-xxxxl));
+      font-weight: var(--un-font-weight-boldest);
+      line-height: var(--un-line-height-smallest);
+      margin: 0 0 8px;
+    }
+    .solutions_highlight_label {
+      color: #fff;
+      font-size: var(--un-font-size-normal);
+      font-weight: var(--un-font-weight-bold);
+      line-height: var(--un-line-height-normal);
+      margin: 0;
     }
     .solutions_title {
       color: #000;
@@ -18,10 +48,16 @@
       margin: 0;
     }
     .solutions_description {
-      color: var(--un-color-grey-text);
+      color: #000;
       font-size: var(--un-font-size-normal);
       line-height: var(--un-line-height-normal);
-      margin: 8px 0 0;
+      margin: 16px 0 0;
+    }
+    .solutions_quote {
+      margin-top: 24px;
+      figure.quote {
+        margin: 0;
+      }
     }
     .solutions_grid {
       display: grid;
