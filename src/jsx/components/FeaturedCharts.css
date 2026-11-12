@@ -7,15 +7,8 @@
       margin: 0 auto;
       max-width: 1350px;
     }
-    .featured_charts_header {
-      align-items: flex-start;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
     .featured_charts_heading {
+      margin-bottom: 24px;
       max-width: 700px;
     }
     .featured_charts_title {
@@ -26,22 +19,18 @@
       margin: 0;
     }
     .featured_charts_description {
-      color: var(--un-color-grey-text);
+      color: #000;
       font-size: var(--un-font-size-normal);
       line-height: var(--un-line-height-normal);
-      margin: 8px 0 0;
+      margin: 16px 0 0;
+      padding: 0;
     }
-    .featured_charts_chart {
-      margin: 0 auto;
-      max-width: 1000px;
-      /* Datawrapper's embed loads async and starts at ~0 height, so a tab shown for the
-         first time grows from empty over roughly a second. Without a floor here, that
-         growth (or the previous tab collapsing to 0 via [hidden]) briefly shrinks the page
-         below the current scroll position and the browser clamps scroll back up the page. */
-      min-height: 100%;
-      .container_chart_data_wrapper {
-        max-width: 1000px;
-        padding: 0;
+    .featured_charts_stats {
+      display: grid;
+      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      .stats_strip_tile {
+        background-color: #fff;
       }
     }
     .featured_charts_footer {
@@ -49,9 +38,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
-      justify-content: space-between;
-      margin: 20px auto 0;
-      max-width: 1000px;
+      justify-content: flex-start;
+      margin: 24px 0 0;
       .featured_charts_dashboard_cta {
         border-radius: 100px;
       }

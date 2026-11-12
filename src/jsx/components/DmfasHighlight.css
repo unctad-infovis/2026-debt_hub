@@ -23,6 +23,7 @@
       font-size: var(--un-font-size-normal);
       line-height: var(--un-line-height-normal);
       margin: 8px 0 0;
+      padding: 0;
     }
     .dmfas_highlight_stats {
       display: grid;

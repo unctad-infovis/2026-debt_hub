@@ -18,8 +18,12 @@
   },
   "featured_charts": {
     "title": "World of Debt",
-    "description": "UNCTAD's flagship data and analysis on the global debt crisis, updated regularly.",
-    "tabs": [{ "label": "Public debt by region", "chart_id": "DAaJ2" }, { "label": "Interest payment burden", "chart_id": "0o2hz" }, { "label": "Net resource transfer", "chart_id": "6oEmg" }],
+    "description": "Developing countries’ public debt continues to grow. The main problem is how much it costs them. They pay far higher interest rates than developed ones. In many, interest bills now exceed spending on health or education.",
+    "stats": [
+      { "value": 35, "label": "Developing countries’ public debt, 2025", "prefix": "$", "suffix": " trillion", "decimals": 0 },
+      { "value": 995, "label": "Net interest payments, 2025", "prefix": "$", "suffix": " billion", "decimals": 0 },
+      { "value": 500, "label": "Possible savings at developed-country interest rates", "prefix": "$", "suffix": " billion a year", "decimals": 0 }
+    ],
     "dashboard_url": "https://unctad.org/publication/world-of-debt/dashboard",
     "dashboard_cta_label": "Open the full interactive dashboard",
     "country_deep_link": {
