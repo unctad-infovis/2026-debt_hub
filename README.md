@@ -40,7 +40,7 @@ Debt Hub is UNCTAD's landing page bringing together its debt-related work — Wo
 
 * `hero.html` / `Hero.jsx` — title, strapline, full-bleed image, pill nav
 * `featured-charts.html` / `FeaturedCharts.jsx` — a small number of recurring World of Debt charts (Datawrapper embeds) + a link to the full interactive dashboard
-* `solutions.html` / `Solutions.jsx` — the page's core router: a highlighted headline figure (3.4 billion people) plus 3 product cards linking to World of Debt, the Borrowers' Platform and DMFAS
+* `solutions.html` / `Solutions.jsx` — the page's core router: an intro with a quote plus 3 product cards linking to World of Debt, the Borrowers' Platform and DMFAS
 * `borrowers-platform.html` / `BorrowersPlatform.jsx` — Borrowers' Platform block (mockup with placeholder copy from `meta.json`'s `borrowers_platform`)
 * `dmfas-highlight.html` / `DmfasHighlight.jsx` — DMFAS stat tiles + a country-usage map + a link out
 

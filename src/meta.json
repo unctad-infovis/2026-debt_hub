@@ -2,7 +2,7 @@
   "show_site_header": true,
   "hero": {
     "title": "Debt Hub",
-    "description": "All of UNCTAD's work on debt, in one place",
+    "description": "Tracking the crisis, connecting borrowing countries, strengthening debt management",
     "background_image_url": "assets/img/2026-debt_hub_hero.jpg?v=2",
     "cta": { "label": "Our solutions", "target_selector": ".solutions" },
     "show_cta": false,
@@ -30,48 +30,41 @@
     }
   },
   "solutions": {
-    "highlight": {
-      "value": 3.4,
-      "prefix": "",
-      "suffix": " billion",
-      "decimals": 1,
-      "label": "People living in countries where interest payments exceed health or education spending"
-    },
     "quote": {
       "text": "Placeholder quote on the global debt crisis and how countries can be supported to manage it.",
       "name": "Rebeca Grynspan",
       "title": "Secretary-General of UNCTAD"
     },
     "title": "UNCTAD's work on debt",
-    "description": "UN Trade and Development (UNCTAD) helps countries understand, negotiate and manage their debt in three ways: through data and analysis, support for borrower countries, and debt-management capacity building.",
+    "description": "Borrowing lets governments invest in roads, schools and hospitals. But when interest costs rise faster than revenue, there’s less money to invest in people and their future. That’s now the case for a growing number of developing countries.",
     "items": [
       {
         "id": "world_of_debt",
-        "title": "World of Debt",
-        "description": "Data and analysis tracking the scale of the global debt crisis.",
+        "title": "A World of Debt",
+        "description": "Tracking the debt crisis and its cost to people",
         "image_url": "assets/img/2026-debt_hub_solutions_world_of_debt.jpg?v=1",
-        "stat_label": "Developing countries' public debt",
-        "stat_value": "$31 trillion",
+        "stat_label": "Live in countries spending more on interest than health or education",
+        "stat_value": "3.7 billion people",
         "cta_label": "Explore World of Debt",
         "url": "https://unctad.org/publication/world-of-debt"
       },
       {
         "id": "borrowers_platform",
         "title": "Borrowers' Platform",
-        "description": "A forum for developing-country borrowers to exchange experience and coordinate on debt issues.",
+        "description": "Bringing borrowing countries together to share experience on debt",
         "image_url": "assets/img/2026-debt_hub_solutions_borrowers_platform.jpg?v=1",
-        "stat_label": "Developing countries' external debt",
+        "stat_label": "Developing countries' external debt, up X%",
         "stat_value": "$11.7 trillion",
         "cta_label": "Visit the Borrowers' Platform",
         "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform"
       },
       {
         "id": "dmfas",
-        "title": "DMFAS",
-        "description": "Debt-management software, capacity building and advisory services, for over 40 years.",
+        "title": "Debt Management and Financial Analysis System",
+        "description": "Helping developing countries manage their debt for over 40 years",
         "image_url": "assets/img/2026-debt_hub_solutions_dmfas.jpg?v=1",
-        "stat_label": "Institutions using DMFAS",
-        "stat_value": "85 institutions in 60 countries",
+        "stat_label": "Institutions worldwide use the UN",
+        "stat_value": "85",
         "cta_label": "Discover DMFAS",
         "url": "https://unctad.org/topic/debt-and-finance/dmfas"
       }
