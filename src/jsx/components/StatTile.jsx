@@ -4,15 +4,19 @@ import formatNumber from '../helpers/FormatNumber.js';
 import './StatTile.css';
 
 // Shared count-up figure tile, used by DmfasHighlight (DMFAS programme figures).
-const StatTile = ({ delay, label, prefix, suffix, decimals, numeric, url }) => {
+const StatTile = ({ delay, label, prefix, suffix, decimals, numeric, text, url }) => {
   const [current, ref] = useCountUp(numeric ?? 0, { decimals });
   const content =
-    numeric != null ? (
+    text || numeric != null ? (
       <>
         <p className="stats_strip_value">
-          {prefix}
-          {formatNumber(current, decimals)}
-          {suffix}
+          {text ?? (
+            <>
+              {prefix}
+              {formatNumber(current, decimals)}
+              {suffix}
+            </>
+          )}
         </p>
         <p className="stats_strip_label">{label}</p>
       </>

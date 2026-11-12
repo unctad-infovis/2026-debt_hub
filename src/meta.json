@@ -24,8 +24,9 @@
       { "value": 995, "label": "Net interest payments, 2025", "prefix": "$", "suffix": " billion", "decimals": 0 },
       { "value": 500, "label": "Possible savings at developed-country interest rates", "prefix": "$", "suffix": " billion a year", "decimals": 0 }
     ],
+    "chart_id": "DAaJ2",
     "dashboard_url": "https://unctad.org/publication/world-of-debt/dashboard",
-    "dashboard_cta_label": "Open the full interactive dashboard",
+    "dashboard_cta_label": "Visit World of Debt",
     "country_deep_link": {
       "enabled": false,
       "param_name": "country",
@@ -35,7 +36,7 @@
   },
   "solutions": {
     "quote": {
-      "text": "Placeholder quote on the global debt crisis and how countries can be supported to manage it.",
+      "text": "The current system forces countries to choose to either default on their debt or to default on their development.",
       "name": "Rebeca Grynspan",
       "title": "Secretary-General of UNCTAD"
     },
@@ -75,25 +76,24 @@
     ]
   },
   "borrowers_platform": {
-    "title": "Borrowers' Platform",
-    "description": "A forum for developing-country borrowers to exchange experience, share data and coordinate on debt issues.",
-    "items": [
-      { "title": "Peer exchange", "description": "Debt officials share lessons from restructurings and negotiations." },
-      { "title": "Shared data", "description": "Common evidence on borrowing terms and creditor practices." },
-      { "title": "Collective voice", "description": "Coordinated positions on reform of the debt architecture." }
+    "title": "No country can solve the debt crisis alone",
+    "description": "Lenders have long coordinated among themselves. Borrowing countries now have a platform to share experience, learn from each other and strengthen their voice in global debt discussions.",
+    "stats": [
+      { "value": 31, "label": "Member countries", "prefix": "", "suffix": "", "decimals": 0 },
+      { "value": 10, "label": "Share of developing countries’ revenue spent on interest to foreign creditors", "prefix": "Almost ", "suffix": "%", "decimals": 0 },
+      { "text": "Nearly 1 in 4", "label": "Revenue dollars least developed countries pay to creditors abroad" }
     ],
     "cta": { "label": "Visit the Borrowers' Platform", "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform" }
   },
   "dmfas_highlight": {
-    "title": "DMFAS: 40+ years of debt-management support",
-    "description": "UNCTAD's technical cooperation programme and debt-management software, used by institutions worldwide.",
+    "title": "Countries can’t manage debt they can’t measure",
+    "description": "Until recently, South Sudan tracked its loans in spreadsheets. In 2025, it became the second country to install the latest version of UNCTAD’s debt-management software. The DMFAS programme also trains debt officers and advises governments, so borrowing decisions rest on reliable data.",
     "stats": [
-      { "value": 85, "label": "Institutions currently using DMFAS", "prefix": "", "suffix": "", "decimals": 0 },
-      { "value": 60, "label": "Countries", "prefix": "", "suffix": "", "decimals": 0 },
-      { "value": 40, "label": "Years of experience", "prefix": "", "suffix": "+", "decimals": 0 },
-      { "value": 115, "label": "Institutions served historically", "prefix": "", "suffix": "+", "decimals": 0 }
+      { "value": 44, "label": "Years supporting developing countries to strengthen debt management", "prefix": "", "suffix": "", "decimals": 0 },
+      { "value": 63, "label": "Countries used the UN Debt Management and Financial Analysis System in 2025", "prefix": "", "suffix": "", "decimals": 0 },
+      { "text": "More than half", "label": "Of least developed countries rely on DMFAS to manage their public debt data" }
     ],
-    "visual": { "type": "map", "countries_csv_url": "" },
+    "visual": { "type": "map", "countries_csv_url": "./assets/data/dmfas_clients.csv" },
     "cta": { "label": "Visit DMFAS", "url": "https://unctad.org/topic/debt-and-finance/dmfas" }
   }
 }

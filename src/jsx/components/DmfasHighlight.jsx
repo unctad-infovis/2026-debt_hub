@@ -20,7 +20,7 @@ const DmfasHighlight = ({ meta }) => {
         </div>
         <div className={`dmfas_highlight_stats stat_tile_group${inView ? ' stat_tile_group--inview' : ''}`} ref={gridRef}>
           {meta.stats.map((stat, idx) => (
-            <StatTile decimals={stat.decimals} delay={idx * 150} key={stat.label} label={stat.label} numeric={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
+            <StatTile decimals={stat.decimals} delay={idx * 150} key={stat.label} label={stat.label} numeric={stat.value} prefix={stat.prefix} suffix={stat.suffix} text={stat.text} />
           ))}
         </div>
         {meta.visual?.type === 'map' && meta.visual.countries_csv_url && <DmfasMap countries_csv_url={meta.visual.countries_csv_url} />}

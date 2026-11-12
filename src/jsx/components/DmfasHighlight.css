@@ -19,10 +19,10 @@
       margin: 0;
     }
     .dmfas_highlight_description {
-      color: var(--un-color-grey-text);
+      color: #000;
       font-size: var(--un-font-size-normal);
       line-height: var(--un-line-height-normal);
-      margin: 8px 0 0;
+      margin: 16px 0 0;
       padding: 0;
     }
     .dmfas_highlight_stats {

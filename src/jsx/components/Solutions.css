@@ -36,6 +36,9 @@
       margin-top: 24px;
       figure.quote {
         margin: 0;
+        blockquote .quote {
+          font-size: var(--un-font-size-xl);
+        }
       }
     }
     .solutions_grid {

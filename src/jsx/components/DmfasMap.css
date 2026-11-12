@@ -9,5 +9,32 @@
     .dmfas_map {
       width: 100%;
     }
+    .dmfas_map_legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      list-style: none;
+      margin: 12px 0 0;
+      padding: 0;
+      .dmfas_map_legend_item {
+        align-items: center;
+        color: #000;
+        display: flex;
+        font-size: var(--un-font-size-xxs);
+        gap: 8px;
+        &:before {
+          border-radius: 50%;
+          content: '';
+          height: 14px;
+          width: 14px;
+        }
+        &.dmfas_map_legend_item--current:before {
+          background-color: #009edb;
+        }
+        &.dmfas_map_legend_item--past:before {
+          background-color: #ffc800;
+        }
+      }
+    }
   }
 }

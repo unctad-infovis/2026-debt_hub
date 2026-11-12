@@ -33,6 +33,14 @@
         background-color: #fff;
       }
     }
+    .featured_charts_chart {
+      margin: 40px 0 0;
+      .container_chart_data_wrapper {
+        margin: 0;
+        max-width: none;
+        padding: 0;
+      }
+    }
     .featured_charts_footer {
       align-items: center;
       display: flex;

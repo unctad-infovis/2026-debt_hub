@@ -20,9 +20,17 @@ import './DmfasMap.css';
 // same convention every UNCTAD project using this topology passes in.
 const CHINA_AREAS = ['156', '158', '344', '446'];
 
-// Binary "uses DMFAS software" map, not a continuous score — a country either has a
-// value (blue) or doesn't (grey, map-tools' own nullColor default).
-const getColorFromValue = value => (value ? '#009edb' : '#ded9d5');
+// Categorical map: value 2 = current DMFAS installation (blue), 1 = past installation (yellow),
+// no value = no deployment (grey, map-tools' own nullColor default).
+const CURRENT_COLOR = '#009edb';
+const PAST_COLOR = '#ffc800';
+const NULL_COLOR = '#ded9d5';
+const getColorFromValue = value => {
+  if (value === 2) return CURRENT_COLOR;
+  if (value === 1) return PAST_COLOR;
+  return NULL_COLOR;
+};
+const STATUS_LABELS = { 2: 'Current installation', 1: 'Past installation' };
 
 const DmfasMap = ({ countries_csv_url }) => {
   const chartRef = useRef(null);
@@ -33,7 +41,7 @@ const DmfasMap = ({ countries_csv_url }) => {
 
     chartRef.current = Highcharts.mapChart('dmfas_map_container', {
       accessibility: {
-        description: 'World map highlighting countries where UNCTAD’s DMFAS debt-management software is in use.'
+        description: 'World map showing countries with a current or past installation of UNCTAD’s DMFAS debt-management software.'
       },
       chart: {
         backgroundColor: 'transparent',
@@ -67,7 +75,7 @@ const DmfasMap = ({ countries_csv_url }) => {
           enableMouseTracking: true,
           joinBy: ['code', 'code'],
           name: 'dmfas_countries',
-          nullColor: '#ded9d5',
+          nullColor: NULL_COLOR,
           states: { hover: { borderColor: '#fff', borderWidth: 2 }, inactive: { enabled: false } },
           type: 'map'
         },
@@ -80,7 +88,7 @@ const DmfasMap = ({ countries_csv_url }) => {
       title: { text: null },
       tooltip: {
         formatter() {
-          return `<b>${this.point.name}</b><br />${this.point.value ? 'Uses DMFAS' : 'No DMFAS deployment'}`;
+          return `<b>${this.point.name}</b><br />${STATUS_LABELS[this.point.value] ?? 'No DMFAS deployment'}`;
         }
       }
     });
@@ -96,7 +104,7 @@ const DmfasMap = ({ countries_csv_url }) => {
       .then(([csv, topology]) => {
         if (!csv || !topology) throw new Error('DMFAS map data unavailable');
 
-        const data = CSVtoJSON(csv).map(row => ({ code: row.code, value: 1 }));
+        const data = CSVtoJSON(csv).map(row => ({ code: row.code, value: row.status === 'past' ? 1 : 2 }));
         createMap(data, topology);
         setStatus('ready');
       })
@@ -118,6 +126,12 @@ const DmfasMap = ({ countries_csv_url }) => {
           `display:none` would zero its offsetWidth right when createMap reads it) and only
           actually filled once the async load resolves; empty until then. */}
       <div className="dmfas_map" id="dmfas_map_container" />
+      {status === 'ready' && (
+        <ul className="dmfas_map_legend">
+          <li className="dmfas_map_legend_item dmfas_map_legend_item--current">Current installation</li>
+          <li className="dmfas_map_legend_item dmfas_map_legend_item--past">Past installation</li>
+        </ul>
+      )}
     </div>
   );
 };
