@@ -18,13 +18,14 @@ export default defineConfig(({ command }) => ({
       // shared entry per script and instead mints a second, differently content-hashed copy
       // of every entry (doubling ~700KB of JS) while breaking the stable `js/[name].min.js`
       // filenames Drupal editors hardcode. Instead, scripts/postbuild.js assembles
-      // dist/index.html afterwards from the tags these 5 real entries already produce.
+      // dist/index.html afterwards from the tags these 6 real entries already produce.
       input: {
         hero: './hero.html',
         'featured-charts': './featured-charts.html',
         solutions: './solutions.html',
         'borrowers-platform': './borrowers-platform.html',
-        'dmfas-highlight': './dmfas-highlight.html'
+        'dmfas-highlight': './dmfas-highlight.html',
+        'debt-conference': './debt-conference.html'
       },
       output: {
         // Entry files keep stable, predictable names (Drupal editors hardcode these in

@@ -13,6 +13,7 @@
       { "label": "World of Debt", "target_selector": ".featured-charts" },
       { "label": "Borrowers' Platform", "target_selector": ".borrowers-platform" },
       { "label": "DMFAS", "target_selector": ".dmfas-highlight" },
+      { "label": "Debt conference", "target_selector": ".debt-conference" },
       { "label": "Subscribe", "url": "https://unctad.org/subscribe" }
     ]
   },
@@ -95,5 +96,11 @@
     ],
     "visual": { "type": "map", "countries_csv_url": "./assets/data/dmfas_clients.csv" },
     "cta": { "label": "Visit DMFAS", "url": "https://unctad.org/topic/debt-and-finance/dmfas" }
+  },
+  "debt_conference": {
+    "title": "Debt conference",
+    "description": "Placeholder text: the biennial UNCTAD Debt Management Conference brings together debt managers, policymakers and experts from around the world to share experience and discuss new challenges.",
+    "details": [{ "label": "Date", "value": "To be confirmed" }, { "label": "Location", "value": "To be confirmed" }],
+    "cta": { "label": "Visit the Debt Conference", "url": "https://unctad.org/topic/debt-and-finance" }
   }
 }

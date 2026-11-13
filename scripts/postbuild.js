@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const distDir = 'dist';
-const entries = ['hero', 'featured-charts', 'solutions', 'borrowers-platform', 'dmfas-highlight'];
+const entries = ['hero', 'featured-charts', 'solutions', 'borrowers-platform', 'dmfas-highlight', 'debt-conference'];
 
 // index.html isn't a Vite entry (see vite.config.js for why), so dist/index.html doesn't
 // exist yet — assemble it from the project's root index.html template, using the exact
