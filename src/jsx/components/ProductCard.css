@@ -1,35 +1,68 @@
 .app-root-2026-debt_hub .app {
   .product_card {
     background: #fff;
-    border: 1px solid var(--un-color-blue-light);
-    border-radius: 18px;
+    border-top: 4px solid var(--un-color-blue);
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 0;
+    grid-row: span 5;
+    grid-template-rows: subgrid;
     overflow: hidden;
+    position: relative;
     .product_card_photo {
-      background-color: var(--un-color-blue-lightest);
+      aspect-ratio: 16 / 9;
+      background-color: var(--un-color-blue-light);
       background-position: center;
       background-size: cover;
-      height: 160px;
+      position: relative;
+      &::after {
+        background: linear-gradient(rgba(0, 26, 51, 0) 35%, rgba(0, 26, 51, 0.22) 62%, rgba(0, 26, 51, 0.55) 100%);
+        content: '';
+        inset: 0;
+        pointer-events: none;
+        position: absolute;
+      }
+      .product_card_link {
+        bottom: 16px;
+        left: 24px;
+        max-width: calc(100% - 48px);
+        position: absolute;
+        z-index: 1;
+        background-color: var(--debt-accent);
+        border-radius: 100px;
+        color: #fff;
+        font-size: var(--un-font-size-xxs);
+        font-weight: var(--un-font-weight-bold);
+        padding: 8px 16px;
+        text-decoration: none;
+        &:hover,
+        &:focus-visible {
+          background-color: var(--secondary-color);
+        }
+      }
     }
     .product_card_body {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      gap: 10px;
+      display: grid;
+      gap: 12px;
+      grid-row: span 4;
+      grid-template-rows: subgrid;
       padding: 24px;
     }
     .product_card_title {
-      color: var(--un-color-blue-darkest);
+      align-items: flex-start;
+      color: var(--debt-ink);
+      display: flex;
       font-size: var(--un-font-size-xl);
       font-weight: var(--un-font-weight-bolder);
+      gap: 10px;
       line-height: var(--un-line-height-small);
       margin: 0;
+      .debt_arrow {
+        margin-top: 0.15em;
+      }
     }
     .product_card_description {
       color: var(--un-color-grey-text);
-      flex: 1;
       font-size: var(--un-font-size-xxs);
       line-height: var(--un-line-height-normal);
       margin: 0;
@@ -39,22 +72,82 @@
       margin: 0;
       padding: 4px 0 4px 12px;
       .product_card_stat_value {
-        color: var(--un-color-blue-text-dark);
+        color: var(--debt-figure);
         display: block;
-        font-size: var(--un-font-size-xl);
+        font-size: 40px;
         font-weight: var(--un-font-weight-boldest);
         line-height: var(--un-line-height-small);
+        .product_card_stat_unit {
+          color: var(--debt-figure-unit);
+          font-size: var(--un-font-size-xl);
+          font-weight: var(--un-font-weight-bolder);
+        }
       }
       .product_card_stat_label {
         color: var(--un-color-grey-text);
         display: block;
-        font-size: var(--un-font-size-xxxs);
-        text-transform: uppercase;
+        font-size: var(--un-font-size-xxs);
+        margin-top: 4px;
       }
     }
-    .product_card_cta {
-      align-self: flex-start;
-      border-radius: 100px;
+    .product_card_actions {
+      align-self: start;
+    }
+    .product_card_jump {
+      align-items: center;
+      background: none;
+      border: 0;
+      color: #000;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: inherit;
+      font-size: var(--un-font-size-xs);
+      font-weight: var(--un-font-weight-bolder);
+      gap: 12px;
+      padding: 0;
+      &::after {
+        content: '';
+        inset: 0;
+        position: absolute;
+      }
+      &:focus-visible {
+        outline: none;
+        &::after {
+          outline: 3px solid var(--un-color-blue-text-dark);
+          outline-offset: -3px;
+        }
+      }
+      .product_card_jump_icon {
+        align-items: center;
+        background-color: var(--main-color);
+        border-radius: 50%;
+        display: inline-flex;
+        flex: none;
+        height: 44px;
+        justify-content: center;
+        transition: background-color 0.25s ease-out;
+        width: 44px;
+        .debt_arrow {
+          --debt-arrow-color: #fff;
+          height: 18px;
+          transition: translate 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+          width: 18px;
+        }
+      }
+    }
+    &.product_card--jump:hover {
+      .product_card_jump_icon {
+        background-color: var(--secondary-color);
+        .debt_arrow {
+          translate: 0 3px;
+        }
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .product_card_jump_icon,
+      .product_card_jump_icon .debt_arrow {
+        transition: none;
+      }
     }
   }
 }

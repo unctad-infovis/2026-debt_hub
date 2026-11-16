@@ -9,6 +9,6 @@ import './theme.css';
 const container = document.getElementById(`app-root-${__PROJECT_NAME__}-borrowers-platform`);
 createRoot(container).render(
   <div className="app">
-    <BorrowersPlatform meta={meta.borrowers_platform} />
+    <BorrowersPlatform meta={meta.borrowers_platform} pillars={meta.pillars} />
   </div>
 );

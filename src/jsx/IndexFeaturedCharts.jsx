@@ -9,6 +9,6 @@ import './theme.css';
 const container = document.getElementById(`app-root-${__PROJECT_NAME__}-featured-charts`);
 createRoot(container).render(
   <div className="app">
-    <FeaturedCharts meta={meta.featured_charts} />
+    <FeaturedCharts meta={meta.featured_charts} pillars={meta.pillars} />
   </div>
 );

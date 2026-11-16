@@ -9,6 +9,6 @@ import './theme.css';
 const container = document.getElementById(`app-root-${__PROJECT_NAME__}-solutions`);
 createRoot(container).render(
   <div className="app">
-    <Solutions meta={meta.solutions} />
+    <Solutions meta={meta.solutions} jump_label={meta.pillars.jump_label} />
   </div>
 );

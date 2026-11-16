@@ -6,28 +6,12 @@
       margin: 0 auto;
       max-width: 1350px;
     }
-    .borrowers_platform_heading {
-      margin-bottom: 24px;
-      max-width: 700px;
-    }
     .borrowers_platform_title {
-      color: #000;
+      color: var(--debt-ink);
       font-size: var(--un-font-size-xxxl);
       font-weight: var(--un-font-weight-bolder);
       line-height: var(--un-line-height-small);
       margin: 0;
-    }
-    .borrowers_platform_description {
-      color: #000;
-      font-size: var(--un-font-size-normal);
-      line-height: var(--un-line-height-normal);
-      margin: 16px 0 0;
-      padding: 0;
-    }
-    .borrowers_platform_stats {
-      display: grid;
-      gap: 22px;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
     .borrowers_platform_cta {
       border-radius: 100px;

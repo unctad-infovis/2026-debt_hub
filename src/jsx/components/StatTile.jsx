@@ -10,13 +10,15 @@ const StatTile = ({ delay, label, prefix, suffix, decimals, numeric, text, url }
     text || numeric != null ? (
       <>
         <p className="stats_strip_value">
+          {prefix && prefix.trim().length > 1 && <span className="stats_strip_unit stats_strip_prefix">{prefix}</span>}
           {text ?? (
-            <>
-              {prefix}
+            <span className="stats_strip_number">
+              {prefix && prefix.trim().length <= 1 && prefix}
               {formatNumber(current, decimals)}
-              {suffix}
-            </>
+              {suffix?.trim() === '%' && suffix}
+            </span>
           )}
+          {suffix && suffix.trim() !== '%' && <span className="stats_strip_unit">{suffix}</span>}
         </p>
         <p className="stats_strip_label">{label}</p>
       </>

@@ -9,6 +9,6 @@ import './theme.css';
 const container = document.getElementById(`app-root-${__PROJECT_NAME__}-dmfas-highlight`);
 createRoot(container).render(
   <div className="app">
-    <DmfasHighlight meta={meta.dmfas_highlight} />
+    <DmfasHighlight meta={meta.dmfas_highlight} pillars={meta.pillars} />
   </div>
 );

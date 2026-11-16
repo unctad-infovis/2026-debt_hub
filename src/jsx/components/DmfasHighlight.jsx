@@ -2,10 +2,11 @@ import ButtonAnchor from '@unctad-infovis/general-tools/components/ButtonAnchor.
 import useIsVisible from '@unctad-infovis/general-tools/helpers/UseIsVisible.js';
 
 import DmfasMap from './DmfasMap.jsx';
+import PillarHeading from './PillarHeading.jsx';
 import StatTile from './StatTile.jsx';
 import './DmfasHighlight.css';
 
-const DmfasHighlight = ({ meta }) => {
+const DmfasHighlight = ({ meta, pillars }) => {
   // StatTile's fade-in (StatTile.css) only turns opaque once its parent carries
   // `stat_tile_group--inview` — set here via useIsVisible so the tiles
   // don't end up permanently invisible.
@@ -14,10 +15,7 @@ const DmfasHighlight = ({ meta }) => {
   return (
     <section className="dmfas_highlight_section dmfas-highlight">
       <div className="dmfas_highlight_content">
-        <div className="dmfas_highlight_heading">
-          <h2 className="dmfas_highlight_title">{meta.title}</h2>
-          {meta.description && <p className="dmfas_highlight_description">{meta.description}</p>}
-        </div>
+        <PillarHeading description={meta.description} kicker={meta.kicker} pillar_id={meta.pillar_id} pillars={pillars} title={meta.title} title_class="dmfas_highlight_title" />
         <div className={`dmfas_highlight_stats stat_tile_group${inView ? ' stat_tile_group--inview' : ''}`} ref={gridRef}>
           {meta.stats.map((stat, idx) => (
             <StatTile decimals={stat.decimals} delay={idx * 150} key={stat.label} label={stat.label} numeric={stat.value} prefix={stat.prefix} suffix={stat.suffix} text={stat.text} />

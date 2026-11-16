@@ -3,27 +3,79 @@
   "hero": {
     "title": "Debt Hub",
     "description": "Tracking the crisis, connecting borrowing countries, strengthening debt management",
-    "background_image_url": "assets/img/2026-debt_hub_hero.jpg?v=2",
-    "cta": { "label": "Our solutions", "target_selector": ".solutions" },
+    "background_image_url": "assets/img/2026-debt_hub_hero.jpg?v=4",
+    "cta": {
+      "label": "Our solutions",
+      "target_selector": ".solutions"
+    },
     "show_cta": false,
     "show_nav_cards": false,
-    "nav_cards": [{ "label": "World of Debt", "image_url": "assets/img/2026-debt_hub_nav_world_of_debt.jpg?v=1", "target_selector": ".featured-charts" }, { "label": "DMFAS", "image_url": "assets/img/2026-debt_hub_nav_dmfas.jpg?v=1", "target_selector": ".dmfas-highlight" }],
+    "nav_cards": [
+      {
+        "label": "World of Debt",
+        "image_url": "assets/img/2026-debt_hub_nav_world_of_debt.jpg?v=1",
+        "target_selector": ".featured-charts"
+      },
+      {
+        "label": "DMFAS",
+        "image_url": "assets/img/2026-debt_hub_nav_dmfas.jpg?v=1",
+        "target_selector": ".dmfas-highlight"
+      }
+    ],
     "pills": [
-      { "label": "Our solutions", "target_selector": ".solutions" },
-      { "label": "World of Debt", "target_selector": ".featured-charts" },
-      { "label": "Borrowers' Platform", "target_selector": ".borrowers-platform" },
-      { "label": "DMFAS", "target_selector": ".dmfas-highlight" },
-      { "label": "Debt conference", "target_selector": ".debt-conference" },
-      { "label": "Subscribe", "url": "https://unctad.org/subscribe" }
-    ]
+      {
+        "label": "Our solutions",
+        "target_selector": ".solutions"
+      },
+      {
+        "label": "World of Debt",
+        "target_selector": ".featured-charts"
+      },
+      {
+        "label": "Borrowers' Platform",
+        "target_selector": ".borrowers-platform"
+      },
+      {
+        "label": "DMFAS",
+        "target_selector": ".dmfas-highlight"
+      },
+      {
+        "label": "Debt conference",
+        "target_selector": ".debt-conference",
+        "highlight": true
+      },
+      {
+        "label": "Subscribe",
+        "url": "https://unctad.org/subscribe"
+      }
+    ],
+    "background_position": "85% 55%"
   },
   "featured_charts": {
     "title": "World of Debt",
     "description": "Developing countries’ public debt continues to grow. The main problem is how much it costs them. They pay far higher interest rates than developed ones. In many, interest bills now exceed spending on health or education.",
     "stats": [
-      { "value": 35, "label": "Developing countries’ public debt, 2025", "prefix": "$", "suffix": " trillion", "decimals": 0 },
-      { "value": 995, "label": "Net interest payments, 2025", "prefix": "$", "suffix": " billion", "decimals": 0 },
-      { "value": 500, "label": "Possible savings at developed-country interest rates", "prefix": "$", "suffix": " billion a year", "decimals": 0 }
+      {
+        "value": 35,
+        "label": "Developing countries’ public debt, 2025",
+        "prefix": "$",
+        "suffix": " trillion",
+        "decimals": 0
+      },
+      {
+        "value": 995,
+        "label": "Net interest payments, 2025",
+        "prefix": "$",
+        "suffix": " billion",
+        "decimals": 0
+      },
+      {
+        "value": 500,
+        "label": "Possible savings at developed-country interest rates",
+        "prefix": "$",
+        "suffix": " billion a year",
+        "decimals": 0
+      }
     ],
     "chart_id": "DAaJ2",
     "dashboard_url": "https://unctad.org/publication/world-of-debt/dashboard",
@@ -33,7 +85,9 @@
       "param_name": "country",
       "label": "Explore a country in the full dashboard",
       "countries": []
-    }
+    },
+    "pillar_id": "world_of_debt",
+    "kicker": "World of Debt"
   },
   "solutions": {
     "quote": {
@@ -48,59 +102,164 @@
         "id": "world_of_debt",
         "title": "A World of Debt",
         "description": "Tracking the debt crisis and its cost to people",
-        "image_url": "assets/img/2026-debt_hub_solutions_world_of_debt.jpg?v=1",
+        "image_url": "https://www.shutterstock.com/shutterstock/photos/2375784717/display_1500/stock-photo-a-doctor-talks-to-his-elderly-patient-during-a-home-visit-in-an-african-village-2375784717.jpg",
         "stat_label": "Live in countries spending more on interest than health or education",
         "stat_value": "3.7 billion people",
         "cta_label": "Explore World of Debt",
-        "url": "https://unctad.org/publication/world-of-debt"
+        "url": "https://unctad.org/publication/world-of-debt",
+        "pillar_target": ".featured-charts"
       },
       {
         "id": "borrowers_platform",
         "title": "Borrowers' Platform",
         "description": "Bringing borrowing countries together to share experience on debt",
-        "image_url": "assets/img/2026-debt_hub_solutions_borrowers_platform.jpg?v=1",
+        "image_url": "https://www.shutterstock.com/shutterstock/photos/2696939055/display_1500/stock-photo-geneva-switzerland-october-informal-discussion-between-international-delegates-during-2696939055.jpg",
         "stat_label": "Developing countries' external debt, up X%",
         "stat_value": "$11.7 trillion",
         "cta_label": "Visit the Borrowers' Platform",
-        "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform"
+        "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform",
+        "pillar_target": ".borrowers-platform"
       },
       {
         "id": "dmfas",
         "title": "Debt Management and Financial Analysis System",
         "description": "Helping developing countries manage their debt for over 40 years",
-        "image_url": "assets/img/2026-debt_hub_solutions_dmfas.jpg?v=1",
+        "image_url": "https://www.shutterstock.com/shutterstock/photos/2338617395/display_1500/stock-photo-african-business-team-working-on-computer-software-app-development-2338617395.jpg",
         "stat_label": "Institutions worldwide use the UN",
         "stat_value": "85",
         "cta_label": "Discover DMFAS",
-        "url": "https://unctad.org/topic/debt-and-finance/dmfas"
+        "url": "https://unctad.org/topic/debt-and-finance/dmfas",
+        "pillar_target": ".dmfas-highlight"
       }
-    ]
+    ],
+    "kicker": "Our solutions"
   },
   "borrowers_platform": {
     "title": "No country can solve the debt crisis alone",
     "description": "Lenders have long coordinated among themselves. Borrowing countries now have a platform to share experience, learn from each other and strengthen their voice in global debt discussions.",
     "stats": [
-      { "value": 31, "label": "Member countries", "prefix": "", "suffix": "", "decimals": 0 },
-      { "value": 10, "label": "Share of developing countries’ revenue spent on interest to foreign creditors", "prefix": "Almost ", "suffix": "%", "decimals": 0 },
-      { "text": "Nearly 1 in 4", "label": "Revenue dollars least developed countries pay to creditors abroad" }
+      {
+        "value": 31,
+        "label": "Member countries",
+        "prefix": "",
+        "suffix": "",
+        "decimals": 0
+      },
+      {
+        "value": 10,
+        "label": "Share of developing countries’ revenue spent on interest to foreign creditors",
+        "prefix": "Almost ",
+        "suffix": "%",
+        "decimals": 0
+      },
+      {
+        "text": "1 in 4",
+        "label": "Revenue dollars least developed countries pay to creditors abroad",
+        "prefix": "Nearly "
+      }
     ],
-    "cta": { "label": "Visit the Borrowers' Platform", "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform" }
+    "cta": {
+      "label": "Visit the Borrowers' Platform",
+      "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform"
+    },
+    "pillar_id": "borrowers_platform",
+    "kicker": "Borrowers' Platform"
   },
   "dmfas_highlight": {
     "title": "Countries can’t manage debt they can’t measure",
     "description": "Until recently, South Sudan tracked its loans in spreadsheets. In 2025, it became the second country to install the latest version of UNCTAD’s debt-management software. The DMFAS programme also trains debt officers and advises governments, so borrowing decisions rest on reliable data.",
     "stats": [
-      { "value": 44, "label": "Years supporting developing countries to strengthen debt management", "prefix": "", "suffix": "", "decimals": 0 },
-      { "value": 63, "label": "Countries used the UN Debt Management and Financial Analysis System in 2025", "prefix": "", "suffix": "", "decimals": 0 },
-      { "text": "More than half", "label": "Of least developed countries rely on DMFAS to manage their public debt data" }
+      {
+        "value": 44,
+        "label": "Years supporting developing countries to strengthen debt management",
+        "prefix": "",
+        "suffix": "",
+        "decimals": 0
+      },
+      {
+        "value": 63,
+        "label": "Countries used the UN Debt Management and Financial Analysis System in 2025",
+        "prefix": "",
+        "suffix": "",
+        "decimals": 0
+      },
+      {
+        "text": "half",
+        "label": "Of least developed countries rely on DMFAS to manage their public debt data",
+        "prefix": "More than "
+      }
     ],
-    "visual": { "type": "map", "countries_csv_url": "./assets/data/dmfas_clients.csv" },
-    "cta": { "label": "Visit DMFAS", "url": "https://unctad.org/topic/debt-and-finance/dmfas" }
+    "visual": {
+      "type": "map",
+      "countries_csv_url": "./assets/data/dmfas_clients.csv"
+    },
+    "cta": {
+      "label": "Visit DMFAS",
+      "url": "https://unctad.org/topic/debt-and-finance/dmfas"
+    },
+    "pillar_id": "dmfas",
+    "kicker": "DMFAS"
   },
   "debt_conference": {
-    "title": "Debt conference",
-    "description": "Placeholder text: the biennial UNCTAD Debt Management Conference brings together debt managers, policymakers and experts from around the world to share experience and discuss new challenges.",
-    "details": [{ "label": "Date", "value": "To be confirmed" }, { "label": "Location", "value": "To be confirmed" }],
-    "cta": { "label": "Visit the Debt Conference", "url": "https://unctad.org/topic/debt-and-finance" }
+    "kicker": "Upcoming event",
+    "title": "15th International Debt Management Conference",
+    "description": "The biennial conference brings together debt managers, policymakers and experts from around the world to share experience and discuss new challenges in public debt management.",
+    "date": {
+      "days": "7–9",
+      "month": "December",
+      "year": "2026"
+    },
+    "details": [
+      {
+        "label": "Date",
+        "value": "7–9 December 2026"
+      },
+      {
+        "label": "Location",
+        "value": "Palais des Nations, Geneva"
+      }
+    ],
+    "image_url": "assets/img/2026-debt_hub_debt_conference.jpg?v=1",
+    "image_alt": "Delegates at the International Debt Management Conference",
+    "cta": {
+      "label": "Find out more",
+      "url": "https://unctad.org/meeting/international-debt-management-conference-15th-session"
+    },
+    "banner": {
+      "enabled": true,
+      "kicker": "Upcoming · Geneva",
+      "venue": "Palais des Nations",
+      "cta_label": "Find out more"
+    }
+  },
+  "pillars": {
+    "overview": {
+      "label": "Our solutions",
+      "target_selector": ".solutions"
+    },
+    "jump_label": "Key figures",
+    "items": [
+      {
+        "id": "world_of_debt",
+        "label": "World of Debt",
+        "target_selector": ".featured-charts",
+        "image_url": "https://www.shutterstock.com/shutterstock/photos/2375784717/display_1500/stock-photo-a-doctor-talks-to-his-elderly-patient-during-a-home-visit-in-an-african-village-2375784717.jpg",
+        "image_credit": "Preview: Shutterstock 2375784717"
+      },
+      {
+        "id": "borrowers_platform",
+        "label": "Borrowers' Platform",
+        "target_selector": ".borrowers-platform",
+        "image_url": "https://www.shutterstock.com/shutterstock/photos/2696939055/display_1500/stock-photo-geneva-switzerland-october-informal-discussion-between-international-delegates-during-2696939055.jpg",
+        "image_credit": "Preview: Shutterstock 2696939055 (editorial)"
+      },
+      {
+        "id": "dmfas",
+        "label": "DMFAS",
+        "target_selector": ".dmfas-highlight",
+        "image_url": "https://www.shutterstock.com/shutterstock/photos/2338617395/display_1500/stock-photo-african-business-team-working-on-computer-software-app-development-2338617395.jpg",
+        "image_credit": "Preview: Shutterstock 2338617395"
+      }
+    ]
   }
 }

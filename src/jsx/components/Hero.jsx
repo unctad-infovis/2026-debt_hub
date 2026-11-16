@@ -5,11 +5,12 @@ import NavCard from './NavCard.jsx';
 import './Hero.css';
 
 const Hero = ({ meta }) => {
-  const { title, description, background_image_url, cta, show_cta, show_nav_cards, nav_cards, pills } = meta.hero;
+  const conference = meta.debt_conference;
+  const { title, description, background_image_url, background_position, cta, show_cta, show_nav_cards, nav_cards, pills } = meta.hero;
 
   return (
     <div className="hero_wrapper">
-      <section className="hero" id="hero" style={background_image_url ? { backgroundImage: `url(${resolveAsset(background_image_url)})` } : undefined}>
+      <section className="hero" id="hero" style={background_image_url ? { backgroundImage: `url(${resolveAsset(background_image_url)})`, backgroundPosition: background_position } : undefined}>
         <div className="hero_content">
           <div className="hero_heading">
             <h1 className="hero_title">{title}</h1>
@@ -34,12 +35,33 @@ const Hero = ({ meta }) => {
           ) : (
             <div className="hero_pills">
               {pills.map(pill => (
-                <ButtonAnchor className={pill.url ? 'hero_link' : 'hero_pill'} key={pill.label} text={pill.label} url={pill.url ?? pill.target_selector} />
+                <ButtonAnchor className={pill.url ? 'hero_link' : `hero_pill${pill.highlight ? ' hero_pill--event' : ''}`} key={pill.label} text={pill.label} url={pill.url ?? pill.target_selector} />
               ))}
             </div>
           )
         }
       </section>
+      {conference?.banner?.enabled && (
+        <aside className="hero_event">
+          <div className="hero_event_inner">
+            <div aria-hidden="true" className="hero_event_date">
+              <span className="hero_event_days">{conference.date.days}</span>
+              <span className="hero_event_month">
+                {conference.date.month} {conference.date.year}
+              </span>
+            </div>
+            <div className="hero_event_text">
+              <p className="hero_event_kicker">{conference.banner.kicker}</p>
+              <p className="hero_event_title">{conference.title}</p>
+              <p className="hero_event_venue">{conference.banner.venue}</p>
+            </div>
+            <a className="hero_event_cta" href={conference.cta.url} rel="noreferrer" target="_blank">
+              {conference.banner.cta_label}
+              <span aria-hidden="true" className="debt_arrow" />
+            </a>
+          </div>
+        </aside>
+      )}
     </div>
   );
 };

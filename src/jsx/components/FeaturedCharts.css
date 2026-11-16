@@ -7,31 +7,12 @@
       margin: 0 auto;
       max-width: 1350px;
     }
-    .featured_charts_heading {
-      margin-bottom: 24px;
-      max-width: 700px;
-    }
     .featured_charts_title {
-      color: #000;
+      color: var(--debt-ink);
       font-size: var(--un-font-size-xxxl);
       font-weight: var(--un-font-weight-bolder);
       line-height: var(--un-line-height-small);
       margin: 0;
-    }
-    .featured_charts_description {
-      color: #000;
-      font-size: var(--un-font-size-normal);
-      line-height: var(--un-line-height-normal);
-      margin: 16px 0 0;
-      padding: 0;
-    }
-    .featured_charts_stats {
-      display: grid;
-      gap: 22px;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      .stats_strip_tile {
-        background-color: #fff;
-      }
     }
     .featured_charts_chart {
       margin: 40px 0 0;

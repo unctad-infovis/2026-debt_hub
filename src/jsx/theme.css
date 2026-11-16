@@ -1,8 +1,43 @@
 /* ButtonAnchor (general-tools) styles its background via var(--main-color)/--secondary-color,
-   which it never defines itself — the consuming app must. Centralized here instead of an
-   inline style per entry (App.jsx used to set this only for the hero) since every entry that
-   renders a ButtonAnchor CTA (Solutions, FeaturedCharts, DmfasHighlight) needs it, not just hero. */
+   which it never defines itself – the consuming app must. Centralized here since every entry
+   that renders a ButtonAnchor CTA needs it. UN blue stays the page's main colour; red is the
+   accent for actions and key markers. */
 .app-root-2026-debt_hub .app {
-  --main-color: var(--un-color-blue);
-  --secondary-color: var(--un-color-blue-darkest);
+  --main-color: var(--un-color-red-text);
+  --secondary-color: var(--un-color-red-text-dark);
+  --debt-accent: var(--un-color-red-brand);
+  --debt-ink: #231f20;
+  --debt-link: var(--un-color-blue-text);
+  --debt-figure: var(--un-color-blue-darkest);
+  --debt-figure-unit: var(--un-color-blue-text);
+  --debt-arrow-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='76 108.5 211.6 209.4'><path d='M76.4,317.5l107.8-106.5-107.1-102.1h92.2c0-.1,117.9,102,117.9,102l-109.9,106.5h-100.9c0,.1,0,0,0,0Z'/></svg>");
+  .debt_arrow {
+    -webkit-mask: var(--debt-arrow-mask) no-repeat center / contain;
+    background-color: var(--debt-arrow-color, var(--debt-accent));
+    display: inline-block;
+    flex: none;
+    height: 0.8em;
+    mask: var(--debt-arrow-mask) no-repeat center / contain;
+    width: 0.8em;
+    &.debt_arrow--down {
+      transform: rotate(90deg);
+    }
+  }
+  .section_kicker {
+    align-items: center;
+    color: var(--un-color-blue-text-dark);
+    display: flex;
+    font-size: var(--un-font-size-xxs);
+    font-weight: var(--un-font-weight-boldest);
+    gap: 10px;
+    letter-spacing: 0.08em;
+    line-height: var(--un-line-height-small);
+    margin: 0 0 14px;
+    padding: 0;
+    text-transform: uppercase;
+    .debt_arrow {
+      height: 18px;
+      width: 18px;
+    }
+  }
 }

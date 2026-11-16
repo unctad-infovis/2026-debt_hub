@@ -18,7 +18,7 @@
     padding: clamp(50px, 7.5vw, 87.5px) 20px;
     position: relative;
     &::before {
-      background: linear-gradient(90deg, rgba(0, 20, 40, 0.88) 0%, rgba(0, 20, 40, 0.6) 55%, rgba(0, 20, 40, 0.2) 100%);
+      background: linear-gradient(90deg, rgba(0, 20, 40, 0.92) 0%, rgba(0, 20, 40, 0.55) 50%, rgba(0, 20, 40, 0.08) 100%);
       content: '';
       inset: 0;
       position: absolute;
@@ -30,7 +30,7 @@
       width: 100%;
     }
     .hero_heading {
-      border-left: 10px solid var(--un-color-blue);
+      border-left: 10px solid var(--debt-accent);
       margin: 0 0 30px;
       padding-left: 24px;
     }
@@ -72,13 +72,21 @@
       position: relative;
       width: 100%;
       .hero_pill {
-        background-color: var(--un-color-yellow-brand);
+        background-color: #fff;
         border-radius: 100px;
-        color: #000;
+        color: var(--un-color-blue-darkest);
         margin: 0;
         &:hover {
-          background-color: var(--un-color-yellow);
-          color: #000;
+          background-color: var(--un-color-blue-lightest);
+          color: var(--un-color-blue-darkest);
+        }
+        &.hero_pill--event {
+          background-color: var(--debt-accent);
+          color: #fff;
+          &:hover {
+            background-color: var(--secondary-color);
+            color: #fff;
+          }
         }
       }
       .hero_link {
@@ -92,6 +100,102 @@
         &:hover {
           background-color: transparent;
           text-decoration: none;
+        }
+      }
+    }
+  }
+  .hero_event {
+    background-color: var(--un-color-blue-darkest);
+    color: #fff;
+    padding: 0 20px;
+    .hero_event_inner {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 28px;
+      margin: 0 auto;
+      max-width: 1350px;
+      padding: 18px 0;
+    }
+    .hero_event_date {
+      background-color: var(--debt-accent);
+      color: #fff;
+      display: flex;
+      flex: none;
+      flex-direction: column;
+      gap: 4px;
+      line-height: 1;
+      padding: 12px 18px;
+      text-align: center;
+      .hero_event_days {
+        font-size: var(--un-font-size-xxl);
+        font-weight: var(--un-font-weight-boldest);
+      }
+      .hero_event_month {
+        font-size: var(--un-font-size-xxxs);
+        font-weight: var(--un-font-weight-bolder);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+    }
+    .hero_event_text {
+      flex: 320px;
+      min-width: 0;
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      .hero_event_kicker {
+        color: var(--un-color-blue-light);
+        font-size: var(--un-font-size-xxxs);
+        font-weight: var(--un-font-weight-bolder);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .hero_event_title {
+        font-size: clamp(var(--un-font-size-normal), 2.2vw, var(--un-font-size-xl));
+        font-weight: var(--un-font-weight-bolder);
+        line-height: var(--un-line-height-small);
+        margin-top: 4px;
+      }
+      .hero_event_venue {
+        color: var(--un-color-blue-light);
+        font-size: var(--un-font-size-xs);
+        margin-top: 4px;
+      }
+    }
+    .hero_event_cta {
+      align-items: center;
+      background-color: #fff;
+      border-radius: 100px;
+      color: var(--un-color-blue-darkest);
+      display: inline-flex;
+      flex: none;
+      font-size: var(--un-font-size-xs);
+      font-weight: var(--un-font-weight-bolder);
+      gap: 10px;
+      padding: 12px 22px;
+      text-decoration: none;
+      transition: background-color 0.2s ease-out;
+      .debt_arrow {
+        height: 14px;
+        transition: translate 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        width: 14px;
+      }
+      &:hover {
+        background-color: var(--un-color-blue-lightest);
+        .debt_arrow {
+          translate: 3px;
+        }
+      }
+      &:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 3px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        &,
+        .debt_arrow {
+          transition: none;
         }
       }
     }
