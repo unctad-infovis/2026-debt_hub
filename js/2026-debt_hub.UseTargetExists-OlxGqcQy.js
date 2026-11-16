@@ -1,0 +1,2 @@
+import{a as e}from"./2026-debt_hub.theme-CZhEWyN7.js";var t=e=>{const t=window.matchMedia("(prefers-reduced-motion: reduce)").matches;document.querySelector(e)?.scrollIntoView({behavior:t?"auto":"smooth",block:"start"})},o=e(),r=e=>{const[t,r]=(0,o.useState)(!1);return(0,o.useEffect)(()=>{const t=()=>r(!!document.querySelector(e));t();const o=new MutationObserver(t);return o.observe(document.body,{childList:!0,subtree:!0}),()=>o.disconnect()},[e]),t};export{t as n,r as t};
+//# sourceMappingURL=2026-debt_hub.UseTargetExists-OlxGqcQy.js.map
