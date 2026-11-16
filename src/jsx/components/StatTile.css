@@ -49,19 +49,22 @@
       gap: 0 0.2em;
       line-height: 1.05;
       margin: 0 0 12px;
+      padding-left: 0.8em;
+      position: relative;
       &::before {
         -webkit-mask: var(--debt-arrow-mask) no-repeat center / contain;
-        align-self: center;
         background-color: var(--un-color-blue);
         content: '';
-        flex: none;
-        height: 0.5em;
+        height: 0.62em;
+        left: 0;
         mask: var(--debt-arrow-mask) no-repeat center / contain;
-        width: 0.5em;
+        position: absolute;
+        top: 0.17em;
+        width: 0.62em;
       }
       .stats_strip_unit {
         color: var(--debt-figure-unit);
-        font-size: 0.5em;
+        font-size: 0.4em;
         font-weight: var(--un-font-weight-bolder);
       }
     }
