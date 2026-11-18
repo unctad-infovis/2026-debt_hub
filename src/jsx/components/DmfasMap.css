@@ -9,6 +9,12 @@
     .dmfas_map {
       width: 100%;
     }
+    .dmfas_map_caption {
+      color: var(--un-color-grey-text);
+      font-size: var(--un-font-size-xxs);
+      line-height: var(--un-line-height-normal);
+      margin: 12px 0 0;
+    }
     .dmfas_map_legend {
       display: flex;
       flex-wrap: wrap;

@@ -17,7 +17,7 @@ const FeaturedCharts = ({ meta, pillars }) => {
         <PillarHeading description={meta.description} kicker={meta.kicker} pillar_id={meta.pillar_id} pillars={pillars} title={meta.title} title_class="featured_charts_title" />
         <div className={`featured_charts_stats stat_tile_group${inView ? ' stat_tile_group--inview' : ''}`} ref={gridRef}>
           {meta.stats.map((stat, idx) => (
-            <StatTile decimals={stat.decimals} delay={idx * 150} key={stat.label} label={stat.label} numeric={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
+            <StatTile decimals={stat.decimals} delay={idx * 150} key={stat.label} label={stat.label} lead={stat.lead} numeric={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
           ))}
         </div>
         {meta.chart_id && (

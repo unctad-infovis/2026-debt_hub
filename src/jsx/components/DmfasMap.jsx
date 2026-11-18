@@ -32,7 +32,7 @@ const getColorFromValue = value => {
 };
 const STATUS_LABELS = { 2: 'Current installation', 1: 'Past installation' };
 
-const DmfasMap = ({ countries_csv_url }) => {
+const DmfasMap = ({ caption, countries_csv_url }) => {
   const chartRef = useRef(null);
   const [status, setStatus] = useState(countries_csv_url ? 'loading' : 'empty');
 
@@ -126,6 +126,7 @@ const DmfasMap = ({ countries_csv_url }) => {
           `display:none` would zero its offsetWidth right when createMap reads it) and only
           actually filled once the async load resolves; empty until then. */}
       <div className="dmfas_map" id="dmfas_map_container" />
+      {caption && <p className="dmfas_map_caption">{caption}</p>}
       {status === 'ready' && (
         <ul className="dmfas_map_legend">
           <li className="dmfas_map_legend_item dmfas_map_legend_item--current">Current installation</li>

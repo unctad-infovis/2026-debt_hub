@@ -68,6 +68,24 @@
         font-weight: var(--un-font-weight-bolder);
       }
     }
+    .stats_strip_value--lead {
+      font-size: var(--un-font-size-xl);
+      line-height: var(--un-line-height-small);
+      padding-left: calc(clamp(44px, 4.6vw, 66px) * 0.8);
+      &::before {
+        height: calc(clamp(44px, 4.6vw, 66px) * 0.62);
+        top: 0;
+        width: calc(clamp(44px, 4.6vw, 66px) * 0.62);
+      }
+    }
+    .stats_strip_lead {
+      color: #000;
+      font-size: var(--un-font-size-xs);
+      font-weight: var(--un-font-weight-bolder);
+      line-height: var(--un-line-height-normal);
+      margin: 0 0 4px;
+      max-width: 32ch;
+    }
     .stats_strip_label {
       color: #000;
       font-size: var(--un-font-size-xs);

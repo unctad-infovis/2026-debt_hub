@@ -5,7 +5,7 @@
     box-sizing: border-box;
     display: grid;
     gap: 0;
-    grid-row: span 5;
+    grid-row: span 6;
     grid-template-rows: subgrid;
     overflow: hidden;
     position: relative;
@@ -44,9 +44,17 @@
     .product_card_body {
       display: grid;
       gap: 12px;
-      grid-row: span 4;
+      grid-row: span 5;
       grid-template-rows: subgrid;
       padding: 24px;
+    }
+    .product_card_kicker {
+      color: var(--debt-accent);
+      font-size: var(--un-font-size-xxxs);
+      font-weight: var(--un-font-weight-bolder);
+      letter-spacing: 0.04em;
+      margin: 0;
+      text-transform: uppercase;
     }
     .product_card_title {
       align-items: flex-start;

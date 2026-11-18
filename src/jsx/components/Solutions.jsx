@@ -17,7 +17,14 @@ const Solutions = ({ meta, jump_label }) => (
             </p>
           )}
           <h2 className="solutions_title">{meta.title}</h2>
-          {meta.description && <p className="solutions_description">{meta.description}</p>}
+          {[meta.description].flat().map(
+            paragraph =>
+              paragraph && (
+                <p className="solutions_description" key={paragraph}>
+                  {paragraph}
+                </p>
+              )
+          )}
           {meta.quote && (
             <div className="solutions_quote">
               <Quote name={meta.quote.name} text={meta.quote.text} title={meta.quote.title} variant="bar" />
@@ -27,7 +34,7 @@ const Solutions = ({ meta, jump_label }) => (
       </div>
       <div className="solutions_grid">
         {meta.items.map(item => (
-          <ProductCard cta_label={item.cta_label} description={item.description} image_url={item.image_url} jump_label={jump_label} key={item.id} stat_label={item.stat_label} pillar_target={item.pillar_target} stat_value={item.stat_value} title={item.title} url={item.url} />
+          <ProductCard kicker={item.kicker} cta_label={item.cta_label} description={item.description} image_url={item.image_url} jump_label={jump_label} key={item.id} stat_label={item.stat_label} pillar_target={item.pillar_target} stat_value={item.stat_value} title={item.title} url={item.url} />
         ))}
       </div>
     </div>

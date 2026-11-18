@@ -1,8 +1,8 @@
 {
   "show_site_header": true,
   "hero": {
-    "title": "Debt Hub",
-    "description": "Tracking the crisis, connecting borrowing countries, strengthening debt management",
+    "title": "UNCTAD’s work on debt",
+    "description": "Global analysis, systemic support for borrowing countries, tools and expertise for national debt management",
     "background_image_url": "assets/img/2026-debt_hub_hero.jpg?v=4",
     "cta": {
       "label": "Our solutions",
@@ -28,15 +28,15 @@
         "target_selector": ".solutions"
       },
       {
-        "label": "World of Debt",
+        "label": "Global analysis",
         "target_selector": ".featured-charts"
       },
       {
-        "label": "Borrowers' Platform",
+        "label": "Borrower support",
         "target_selector": ".borrowers-platform"
       },
       {
-        "label": "DMFAS",
+        "label": "Public debt management",
         "target_selector": ".dmfas-highlight"
       },
       {
@@ -52,34 +52,41 @@
     "background_position": "85% 55%"
   },
   "featured_charts": {
-    "title": "World of Debt",
-    "description": "Developing countries’ public debt continues to grow. The main problem is how much it costs them. They pay far higher interest rates than developed ones. In many, interest bills now exceed spending on health or education.",
+    "title": "A World of Debt",
+    "description": "Developing countries' public debt continues to grow. The main problem is the cost. They pay far higher interest rates than developed countries. In many, interest bills now exceed spending on health or education.",
     "stats": [
       {
-        "value": 35,
-        "label": "Developing countries’ public debt, 2025",
+        "value": 111,
+        "label": "Global public debt has more than doubled since 2010, reaching $111 trillion in 2025.",
         "prefix": "$",
         "suffix": " trillion",
-        "decimals": 0
+        "decimals": 0,
+        "lead": "Debt has spiralled."
       },
       {
-        "value": 995,
-        "label": "Net interest payments, 2025",
-        "prefix": "$",
-        "suffix": " billion",
-        "decimals": 0
+        "value": 5.2,
+        "label": "Their rates reach 5.2%, against 2.2% for developed countries. They paid nearly $1 trillion in interest in 2025.",
+        "prefix": "",
+        "suffix": "%",
+        "decimals": 1,
+        "lead": "Developing countries pay far more to borrow."
       },
       {
-        "value": 500,
-        "label": "Possible savings at developed-country interest rates",
-        "prefix": "$",
-        "suffix": " billion a year",
-        "decimals": 0
+        "value": 3.7,
+        "label": "Today, 3.7 billion people live in countries that spend more on interest than on health or education, putting essential services at risk.",
+        "prefix": "",
+        "suffix": " billion people",
+        "decimals": 1,
+        "lead": "People's futures are directly affected."
+      },
+      {
+        "lead": "External finance is harder to access.",
+        "label": "Bilateral lenders are diverting aid, and private creditors are more risk averse."
       }
     ],
     "chart_id": "DAaJ2",
     "dashboard_url": "https://unctad.org/publication/world-of-debt/dashboard",
-    "dashboard_cta_label": "Visit World of Debt",
+    "dashboard_cta_label": "Explore A World of Debt",
     "country_deep_link": {
       "enabled": false,
       "param_name": "country",
@@ -87,56 +94,63 @@
       "countries": []
     },
     "pillar_id": "world_of_debt",
-    "kicker": "World of Debt"
+    "kicker": "Groundbreaking data and analysis"
   },
   "solutions": {
     "quote": {
-      "text": "The current system forces countries to choose to either default on their debt or to default on their development.",
+      "text": "This is not a debt crisis. It’s a development crisis. Countries face an impossible choice: to default on their debt or default on their development.",
       "name": "Rebeca Grynspan",
-      "title": "Secretary-General of UNCTAD"
+      "title": "Secretary-General of UN Trade and Development (UNCTAD)"
     },
-    "title": "UNCTAD's work on debt",
-    "description": "Borrowing lets governments invest in roads, schools and hospitals. But when interest costs rise faster than revenue, there’s less money to invest in people and their future. That’s now the case for a growing number of developing countries.",
+    "title": "UNCTAD’s work on debt",
+    "description": [
+      "Governments use public debt to finance public services and infrastructure, protect and invest in their people and build a better future.",
+      "But when interest costs rise too high, people’s futures are at risk. This is the reality facing a growing number of developing countries.",
+      "Today, 3.7 billion people live in countries spending more on interest payments than on health or education."
+    ],
     "items": [
       {
         "id": "world_of_debt",
         "title": "A World of Debt",
         "description": "Tracking the debt crisis and its cost to people",
         "image_url": "https://www.shutterstock.com/shutterstock/photos/2375784717/display_1500/stock-photo-a-doctor-talks-to-his-elderly-patient-during-a-home-visit-in-an-african-village-2375784717.jpg",
-        "stat_label": "Live in countries spending more on interest than health or education",
+        "stat_label": "Live in countries spending more on interest than on health or education",
         "stat_value": "3.7 billion people",
-        "cta_label": "Explore World of Debt",
+        "cta_label": "Explore A World of Debt",
         "url": "https://unctad.org/publication/world-of-debt",
-        "pillar_target": ".featured-charts"
+        "pillar_target": ".featured-charts",
+        "kicker": "Global data and analysis"
       },
       {
         "id": "borrowers_platform",
         "title": "Borrowers' Platform",
-        "description": "Bringing borrowing countries together to share experience on debt",
+        "description": "Bringing borrowing countries together to share experience on debt management",
         "image_url": "https://www.shutterstock.com/shutterstock/photos/2696939055/display_1500/stock-photo-geneva-switzerland-october-informal-discussion-between-international-delegates-during-2696939055.jpg",
-        "stat_label": "Developing countries' external debt, up X%",
+        "stat_label": "Developing countries' external debt, up X% since Y [to confirm]",
         "stat_value": "$11.7 trillion",
         "cta_label": "Visit the Borrowers' Platform",
         "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform",
-        "pillar_target": ".borrowers-platform"
+        "pillar_target": ".borrowers-platform",
+        "kicker": "Systemic support for indebted countries"
       },
       {
         "id": "dmfas",
-        "title": "Debt Management and Financial Analysis System",
-        "description": "Helping developing countries manage their debt for over 40 years",
+        "title": "DMFAS",
+        "description": "Helping developing countries strengthen their capacity to manage their debt",
         "image_url": "https://www.shutterstock.com/shutterstock/photos/2338617395/display_1500/stock-photo-african-business-team-working-on-computer-software-app-development-2338617395.jpg",
-        "stat_label": "Institutions worldwide use the UN",
-        "stat_value": "85",
+        "stat_label": "Worldwide use of UNCTAD’s debt management system (63 countries)",
+        "stat_value": "44 years, 85 institutions",
         "cta_label": "Discover DMFAS",
         "url": "https://unctad.org/topic/debt-and-finance/dmfas",
-        "pillar_target": ".dmfas-highlight"
+        "pillar_target": ".dmfas-highlight",
+        "kicker": "National debt management tools"
       }
     ],
     "kicker": "Our solutions"
   },
   "borrowers_platform": {
     "title": "No country can solve the debt crisis alone",
-    "description": "Lenders have long coordinated among themselves. Borrowing countries now have a platform to share experience, learn from each other and strengthen their voice in global debt discussions.",
+    "description": "UNCTAD is the secretariat of the Borrowers’ Platform, a member state-led initiative of finance ministers and central bank governors. It offers borrowing countries a dedicated space to come together, share knowledge, learn from each other and speak collectively on debt issues.",
     "stats": [
       {
         "value": 31,
@@ -146,16 +160,12 @@
         "decimals": 0
       },
       {
-        "value": 10,
-        "label": "Share of developing countries’ revenue spent on interest to foreign creditors",
-        "prefix": "Almost ",
-        "suffix": "%",
-        "decimals": 0
+        "text": "April 2026",
+        "label": "Launched in Washington, D.C."
       },
       {
-        "text": "1 in 4",
-        "label": "Revenue dollars least developed countries pay to creditors abroad",
-        "prefix": "Nearly "
+        "text": "Pakistan",
+        "label": "Chairs the first annual cycle, from October 2026 to October 2027"
       }
     ],
     "cta": {
@@ -163,11 +173,16 @@
       "url": "https://unctad.org/topic/debt-and-finance/borrowers-platform"
     },
     "pillar_id": "borrowers_platform",
-    "kicker": "Borrowers' Platform"
+    "kicker": "UNCTAD supports the Borrowers’ Platform",
+    "quote": {
+      "text": "We undertake to develop a global and representative membership of borrowing countries committed to improving debt sustainability practices and development-oriented finance, and to strengthen cooperation among borrowing countries in support of a fairer, more responsive and more equitable international debt architecture.",
+      "name": "Borrowers’ Platform",
+      "title": ""
+    }
   },
   "dmfas_highlight": {
-    "title": "Countries can’t manage debt they can’t measure",
-    "description": "Until recently, South Sudan tracked its loans in spreadsheets. In 2025, it became the second country to install the latest version of UNCTAD’s debt-management software. The DMFAS programme also trains debt officers and advises governments, so borrowing decisions rest on reliable data.",
+    "title": "Over 40 years building countries’ capacity to manage national debt",
+    "description": "Until recently, South Sudan tracked its loans in spreadsheets. In 2025, it became the second country, after Zambia, to install the latest version of UNCTAD's debt management software. The DMFAS programme also trains debt officers and advises governments, so borrowing decisions rest on reliable data.",
     "stats": [
       {
         "value": 44,
@@ -184,26 +199,34 @@
         "decimals": 0
       },
       {
-        "text": "half",
+        "value": 50,
         "label": "Of least developed countries rely on DMFAS to manage their public debt data",
-        "prefix": "More than "
+        "prefix": "Over ",
+        "suffix": "%",
+        "decimals": 0
       }
     ],
     "visual": {
       "type": "map",
-      "countries_csv_url": "./assets/data/dmfas_clients.csv"
+      "countries_csv_url": "./assets/data/dmfas_clients.csv",
+      "caption": "Countries with a current or past installation of UNCTAD's DMFAS debt management software."
     },
     "cta": {
       "label": "Visit DMFAS",
       "url": "https://unctad.org/topic/debt-and-finance/dmfas"
     },
     "pillar_id": "dmfas",
-    "kicker": "DMFAS"
+    "kicker": "UNCTAD’s Debt Management and Financial Analysis System (DMFAS)",
+    "quote": {
+      "text": "With DMFAS 7, it’s so much easier and quicker to record data. The new version will allow us to reduce the time of loan recording by half.",
+      "name": "Patrick Makashini",
+      "title": "Debt Management Officer, Ministry of Finance and National Planning of Zambia"
+    }
   },
   "debt_conference": {
-    "kicker": "Upcoming event",
+    "kicker": "Key event",
     "title": "15th International Debt Management Conference",
-    "description": "The biennial conference brings together debt managers, policymakers and experts from around the world to share experience and discuss new challenges in public debt management.",
+    "description": "The conference brings together debt managers, policymakers and experts from around the world to share experience and discuss new challenges in managing public debt.",
     "date": {
       "days": "7–9",
       "month": "December",
@@ -216,20 +239,20 @@
       },
       {
         "label": "Location",
-        "value": "Palais des Nations, Geneva"
+        "value": "Palais des Nations, Geneva, Switzerland"
       }
     ],
     "image_url": "assets/img/2026-debt_hub_debt_conference.jpg?v=1",
     "image_alt": "Delegates at the International Debt Management Conference",
     "cta": {
-      "label": "Find out more",
+      "label": "Learn more about the conference",
       "url": "https://unctad.org/meeting/international-debt-management-conference-15th-session"
     },
     "banner": {
       "enabled": true,
-      "kicker": "Upcoming · Geneva",
-      "venue": "Palais des Nations",
-      "cta_label": "Find out more"
+      "kicker": "Key event",
+      "venue": "Palais des Nations, Geneva, Switzerland",
+      "cta_label": "Learn more about the conference"
     }
   },
   "pillars": {
@@ -251,7 +274,7 @@
         "label": "Borrowers' Platform",
         "target_selector": ".borrowers-platform",
         "image_url": "https://www.shutterstock.com/shutterstock/photos/2696939055/display_1500/stock-photo-geneva-switzerland-october-informal-discussion-between-international-delegates-during-2696939055.jpg",
-        "image_credit": "Preview: Shutterstock 2696939055 (editorial)"
+        "image_credit": "Member states of the Borrowers’ Platform, 1st Governing Council meeting, Bangkok, Thailand, 12 October 2026"
       },
       {
         "id": "dmfas",

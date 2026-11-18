@@ -10,7 +10,7 @@ const splitStat = value => {
   return match ? { number: match[1], unit: match[2] } : { number: value, unit: '' };
 };
 
-const ProductCard = ({ title, description, image_url, stat_label, stat_value, cta_label, url, jump_label, pillar_target }) => {
+const ProductCard = ({ kicker, title, description, image_url, stat_label, stat_value, cta_label, url, jump_label, pillar_target }) => {
   const canJump = useTargetExists(pillar_target ?? '#none');
   const { number, unit } = splitStat(stat_value);
 
@@ -25,6 +25,7 @@ const ProductCard = ({ title, description, image_url, stat_label, stat_value, ct
         </a>
       </div>
       <div className="product_card_body">
+        {kicker && <p className="product_card_kicker">{kicker}</p>}
         <h3 className="product_card_title">
           <span aria-hidden="true" className="debt_arrow" />
           {title}

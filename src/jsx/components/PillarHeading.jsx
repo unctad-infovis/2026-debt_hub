@@ -1,3 +1,4 @@
+import Quote from '@unctad-infovis/general-tools/components/Quote.jsx';
 import { resolveAsset } from '@unctad-infovis/general-tools/helpers/BasePath.js';
 
 import scrollToSelector from '../helpers/ScrollTo.js';
@@ -21,7 +22,7 @@ const NavLink = ({ label, target_selector, up }) => {
 
 // Heading shared by the three pillar sections: kicker, cross-links to the other pillars and
 // back to the overview, title, description, and a chevron-clipped photo (empty = placeholder).
-const PillarHeading = ({ description, kicker, pillar_id, pillars, title, title_class }) => {
+const PillarHeading = ({ description, kicker, pillar_id, pillars, quote, title, title_class }) => {
   const others = pillars?.items.filter(item => item.id !== pillar_id) ?? [];
   const current = pillars?.items.find(item => item.id === pillar_id);
 
@@ -46,6 +47,11 @@ const PillarHeading = ({ description, kicker, pillar_id, pillars, title, title_c
         </div>
         <h2 className={title_class}>{title}</h2>
         {description && <p className="pillar_description">{description}</p>}
+        {quote && (
+          <div className="pillar_quote">
+            <Quote name={quote.name} text={quote.text} title={quote.title} variant="bar" />
+          </div>
+        )}
       </div>
       <figure className="pillar_photo">
         <div className="pillar_photo_image" style={current?.image_url ? { backgroundImage: `url(${resolveAsset(current.image_url)})` } : undefined} />
